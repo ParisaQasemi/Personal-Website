@@ -1,0 +1,113 @@
+@import '../../vars.css';
+
+.container {
+    position: relative;
+    background-color: #04152D;
+    border-radius: 15px;
+    padding: 73px;
+    margin-top: 129px;
+    z-index: 1;
+    margin-left: 10%;
+    margin-right: 10%;
+}
+
+.title {
+    color: var(--color-text);
+    font-size: 35px;
+    font-weight: 700;
+    letter-spacing: 1.75;
+    text-transform: uppercase;
+}
+
+.content {
+    width: 100%;
+    height: auto;
+}
+
+.FormItems {
+    width: 100%;
+    height: auto;
+    margin: 4px 0;
+    color:red;
+    flex-direction: column;
+    justify-content: space-between;
+    margin: 0px auto;
+
+}
+
+.FormItemDiv span {
+    margin: 0px 0;
+}
+
+.FormItems label {
+    color: var(--color-text);
+    font-size: 15px;
+    font-weight: 900;
+    text-align: left;
+    width: 59%;
+}
+
+.FormItems input {
+    width: 98%;
+    height: 40px;
+    border-radius: 5px;
+    padding: 5px;
+    border: 0;
+    outline: none;
+}
+
+.FormItems textarea {
+    width: 99%;
+    height: 150px;
+    border-radius: 5px;
+    padding: 5px;
+    border: 0;
+    outline: none;
+    resize: none;
+}
+
+.FormItemDiv {
+    display: flex;
+    margin: 20px 0;
+    height: 100px;
+    align-items: start;
+}
+
+.aboutImage {
+    width: 35%;
+}
+
+.Submit {
+    width: 50%;
+    height: 40px;
+    font-size: 20px;
+    font-weight: 700;
+    cursor: pointer;
+    display: block;
+    margin: 20px auto;
+}
+
+@media screen and (max-width: 830px){ 
+    .container {
+        background-color: transparent;
+        padding-left: 0;
+        padding-right: 0;
+    }
+
+    .FormItems {
+        display: block;
+        margin: 20px 0;
+    }
+
+    .FormItems input {
+        width: 100%;
+        margin: 10px auto;
+    }
+
+    .FormItemDiv {
+        display: block;
+        height: auto;
+    }
+}
+
+
